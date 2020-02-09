@@ -7,12 +7,12 @@
 
 Take a look at what is waiting for you:
 
-- •	imdb scraping
-- •	managing watch servers
-- •	managing download servers
-- •	Readable and centralized Theme Configs
-- •	Oriented for building with Actions and Filters
-- •	Enhanced Templating with support for passing data
+- imdb scraping
+- managing watch servers
+- managing download servers
+- Readable and centralized Theme Configs
+- Oriented for building with Actions and Filters
+- Enhanced Templating with support for passing data
 - Simple [Theme Service Container](http://symfony.com/doc/2.0/glossary.html#term-service-container)
 - Child Theme friendly [Autoloader](https://en.wikipedia.org/wiki/Autoload)
 - Readable and centralized Theme Configs

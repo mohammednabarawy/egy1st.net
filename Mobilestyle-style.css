@@ -1,0 +1,1268 @@
+@media(max-width:1440px) {
+	.container,
+	body {
+		max-width: 100%
+	}
+	.note_box {
+	}
+	.customSearch>div {
+		width: auto;
+		padding-left: 40px
+	}
+}
+
+@media(max-width:1200px) {
+	.MovieItem {
+		width: calc(20% - 8px)
+	}
+	.MainRelated .MovieItem:nth-child(6n+0) {
+		margin-left: 10px
+	}
+	.MainRelated .MovieItem:nth-child(5n+0) {
+		margin-left: 0
+	}
+}
+
+@media(max-width:1024px) {
+	.RightPoster, .RightPoster.active, .RightPoster.active.ThTop {
+		margin: 0 auto;
+		width: 310px;
+		top: 0;
+		height: auto;
+		display: block;
+	}
+	.NewsCard,.NewsCard:nth-child(5n + 0){
+		width: calc(25% - 10px);
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	.SLeft {
+		width: calc(100% - 320px);
+	}
+	.left,
+	.right {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(0)
+	}
+	.PlayOpenPost{
+		right: calc(25% - 40px);
+	}
+	a.FunClick.SliderOwl-next, a.FunClick.SliderOwl-prev{
+		transform: translate(0px, 15px);
+		opacity: 1;
+		visibility: visible;
+	}
+	a.FunClick.SliderOwl-next {
+		left: -73px;
+	}
+	.TopVBar {
+		height: auto;
+		min-height: 62px;
+	}
+	div#DownloadTable .ListDownloads {
+	}
+	.MovieItem {
+		width: 230px;
+		float: none;
+		margin: 0 5px!important
+	}
+	.CatsFilm {
+		position: relative;
+		width: 100%;
+		margin-top: 9px
+	}
+	.CatsFilm>a {
+		width: 33.3%
+	}
+	.MainRelated {
+		display: inline-block
+	}
+	section.SearchingArea.active .OpenFilterSnagl {
+		visibility: visible;
+		opacity: 1;
+		height: 60px
+	}
+	section.SearchingArea.active.Hauto .OpenFilterSnagl {
+		height: 40px
+	}
+	.customSearch {
+		text-align: center
+	}
+	section.SearchingArea {
+		height: 40px;
+		overflow: hidden
+	}
+	section.SearchingArea.absolute.Hauto {
+		height: auto;
+		padding-bottom: 18px;
+		overflow: visible
+	}
+	.OpenFilterSnagl {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		font-size: 17px;
+		padding-top: 0;
+		visibility: visible;
+		opacity: 1;
+		height: 40px
+	}
+	.OpenFilterSnagl em {
+		display: block;
+		font-style: normal;
+		font-size: 13px;
+		position: relative;
+		top: -2px
+	}
+	.SearchingFilter.show {
+		overflow: hidden;
+		top: 70px;
+		height: 62px
+	}
+	.hamburger.OpenMenu {
+		display: block
+	}
+	.MenuHeader {
+		display: none;
+	}
+	.MasterBtnUl {
+		right: 0
+	}
+	.BTNMaster span {
+		font-size: 20px
+	}
+	.CoverBSingle,
+	.LiveTop {
+	}
+	.MasterTabRelated {
+		width: 100%;
+		text-align: center;
+		top: auto;
+		float: none;
+		top: -10px
+	}
+	.CoverBSingle.WatchPage {
+		height: auto
+	}
+	.TheTitle {
+	}
+	.ContentTex,
+	.MediaQueryLeft,
+	.TheTitle {
+	}
+	.main-content {
+		width: 970px
+	}
+	.MainRelated .NewsBlock {
+		width: 320px;
+		margin-left: 10px!important
+	}
+	.WatchServersMain {
+		width: 100%
+	}
+	div#EmbedCode {
+	}
+	ul.WatchServers {
+	}
+	div#DownloadTable {
+		width: 100%
+	}
+
+}
+
+@media(max-width:970px) {
+	.TillerTop{
+		width: 90%;
+		max-height: 70vh;
+		top: calc(50% + 30px);
+	}
+	.NewsCard{
+		width:240px;
+		display: inline-block;
+	}
+	.SLeft{
+		width:100%
+	}
+	.RightPoster, .RightPoster.active,.RightPoster.active.ThTop {
+		margin: 0 auto;
+		width: 350px;
+		top: 0;
+		position: relative;
+		float: none;
+		height: auto;
+		display: block;
+	}
+	.social-btns{
+		display:inline-block;
+		float:none
+	}
+	.TheSection{
+		width:100%;
+		margin-bottom: 10px;
+	}
+	.OneSection {
+		float: none
+	}
+	.PlayOpenPost{
+		transform: scale(0.69);
+		bottom: 160px;
+		left: -20px;
+		right: auto;
+		top: auto;
+	}
+	.PlayNow {
+		position: relative;
+		top: 10px;
+	}
+	.PlayNow i {
+		right: -2px;
+	}
+	.PlayOpenPost span.runtime {
+		bottom: -36px;
+		font-size: 19px;
+		display: none;
+	}
+	.PlayNow span {
+		bottom: -32px;
+		font-size: 17px;
+	}
+	.PlayOpenPost:before {height: 115px;top: 2px;border-radius: 60px 60px 0px 0px;border: 1px solid #00000000;transform: rotate(90deg);}
+	.SmallSlider{
+		width:100%;
+		height: 140px;
+	}
+	.SliderTopAjax{
+		width: 120px;
+	}
+	a.FunClick.SliderOwl-next, a.FunClick.SliderOwl-prev{
+		transform: translate(0px, 15px);
+		opacity: 1;
+		visibility: visible;
+	}
+	a.FunClick.SliderOwl-next {
+		left: -73px;
+	}
+	.SmallSlider:before, .SmallSlider:after{display: none;}
+	.SliderTopAjax .owl-item {
+		height: 140px;
+	}
+	.DivContentNew{
+		width:100%;
+		top: 0;
+		padding: 70px 15px 0 80px;
+		background: #0000008f;
+		height: 100%;
+	}
+	.DivContentNew .IMDBBB {
+		top: 80px;
+		left: -40px;
+	}
+	.NewTem {
+		font-size: 13px;
+	}
+	.DivContentNew h2 {
+		font-size: 18px;
+		width: 100%;
+	}
+	.TopTerms > span {
+		font-size: 13px;
+	}
+	.RowerContent {
+		font-size: 0;
+	}
+	.BgTopSlider{
+	    width: 100%;
+	}
+	.BgTopSlider:nth-child(1):after {
+		display: none;
+	}
+	.BgTopSlider:nth-child(2) {
+		display: none;
+	}
+	.MaiButtom {
+		top: 0;
+	}
+	.MaiButtom>ul {
+		text-align: center
+	}
+	.MaiButtom>ul li {
+		margin-bottom: 5px
+	}
+	.fuctsd.unInd~.MaiButtom {
+		top: 0
+	}
+	.customSearch>div.filter button {
+		border-radius: 0;
+		text-align: center
+	}
+	.TopVBar {
+		height: auto;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.TopVBar>span,
+	.TopVBar>span.fuctsd.unInd {
+		text-align: center;
+		width: 100%;
+		float: none
+	}
+	span.fuctsd.unInd a>em {
+		float: right
+	}
+	.TopVBar>span p {
+		width: 100%;
+		top: 10px
+	}
+	.TopVBar>span em em {
+		left: auto
+	}
+	.customSearch>div.filter button span {
+		position: relative;
+		top: auto;
+		right: auto;
+		left: auto;
+		visibility: visible;
+		opacity: 1;
+		display: inline-block;
+		padding: 0;
+		bottom: 6px
+	}
+	.main-content {
+		width: 100%
+	}
+	#head.Fixed .logo {
+		margin-left: 0;
+	}
+	.WatchServersMain {
+		width: 100%
+	}
+	div#EmbedCode {
+	}
+	ul.WatchServers {
+	}
+	div#DownloadTable {
+		width: 100%
+	}
+	.BTNMaster span {
+		font-size: 22px
+	}
+	.SearchingFilter.show {
+		width: 100%;
+		top: 105px;
+		overflow: hidden;
+		height: 61px
+	}
+	.customSearch>div ul {
+		max-height: 108px
+	}
+	.MovieItem {
+		width: 240px;
+		float: none;
+		margin: 0 5px!important
+	}
+	.MainRelated {
+		display: inline-block
+	}
+	.RightPoster {
+	}
+
+    .RightPoster .DivImgPos {
+    }
+	.TheTitle {
+		transform: translateY(0);
+		width: 100%;
+		margin: 0;
+		text-align: center
+	}
+	.TheTitle>.TitleBar {
+		width: 100%
+	}
+	.CoverBSingle,
+	.CoverBSingle.WatchPage {
+	}
+	.IMDB {
+		position: absolute;
+		top: 0;
+		left: 95px;
+		margin-top: 5px;
+		display: inline-block;
+		float: none
+	}
+	.Mashers>ul {
+		text-align: center
+	}
+	.leftSingle {
+		float: none;
+		display: block;
+		margin: 0 auto
+	}
+	.ContentTex {
+		float: none;
+		margin-top: 5px;
+		width: 100%
+	}
+	.MasterBtnUl {
+		position: relative;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		display: block;
+		right: 0
+	}
+	.CatsFilm {
+		position: relative;
+		width: 100%;
+		margin-bottom: 20px
+	}
+	.CatsFilm>a {
+		width: 50%
+	}
+	.MasterTabRelated>div {
+		margin-bottom: 10px
+	}
+	.MasterTabRelated {
+		display: block;
+		text-align: center;
+		top: 0
+	}
+	.LiveTop {
+	}
+	.MediaQueryLeft {
+		width: 100%;
+		float: none
+	}
+	.MediaQueryLeft>ul>li {
+		width: calc(50% - 5px);
+		text-align: right
+	}
+	ul.MasterToggleItem {
+	}
+	ul.MasterToggleItem>li>em {
+		float: none;
+		display: none;
+		margin: 0 auto
+	}
+	.MasterToggleOpen {
+	height: auto;
+	max-height: unset;
+	}
+
+ul.InnerESP>li,ul.InnerESP>li:nth-child(9n + 0) {
+    min-width: unset;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    float: none;
+}
+	.BTNMaster {
+		min-width: 100%;
+		margin-left: 5px
+	}
+	section.ToggleMange {
+		margin-bottom: 0
+	}
+	div#DownloadTable .ListDownloads,div#DownloadTable .ListDownloads:nth-child(4n + 0) {
+		width: calc(33.3% - 7px);
+		margin-left: 7px;
+	}
+	.customSearch>div.filter {
+		width: 100%;
+		top: 10px
+	}
+	.customSearch>div.filter button i {
+		float: none
+	}
+	.customSearch>div {
+		width: auto;
+		padding-left: 35px
+	}
+}
+
+@media (max-width:950px) {
+	.SliderMaster .owl-carousel {
+		max-width: 100%
+	}
+	a.sliderpin-next,
+	a.sliderpin-prev {
+		width: 41px;
+		height: 41px;
+		left: 30px;
+		top: 6px;
+		font-family: "Font Awesome 5 Pro";
+		font-size: 26px;
+		border-radius: 14px;
+		line-height: 41px;
+		text-align: center;
+		border: 1px solid #00000030
+	}
+	a.sliderpin-prev {
+		left: 75px
+	}
+	a.sliderpin-next:before,
+	a.sliderpin-prev:before {
+		content: '\f054';
+		position: absolute;
+		right: 50%;
+		transform: translateX(50%)
+	}
+	a.sliderpin-next:before {
+		content: '\f053'
+	}
+	.SliderMaster {
+		height: 450px
+	}
+	.hero-area-slide>.ImagePosted {
+		width: 190px;
+		height: 260px;
+		position: absolute;
+		z-index: 100;
+		top: 97px;
+		left: 10px
+	}
+	.IMDBRt {
+		width: 190px;
+		bottom: -7px;
+		z-index: 101;
+		left: 10px
+	}
+	.slide-cast>ul>li>a:nth-child(2n+0) {
+		display: none
+	}
+	.MasterContentSlider>div>h2>a>span {
+		position: relative;
+		white-space: unset;
+		line-height: 15px;
+		transition: .1s linear
+	}
+	.MasterContentSlider>div>h2 {
+		height: auto;
+		line-height: 30px;
+		padding-top: 4px;
+		border-bottom: 1px solid #00000026
+	}
+	.MasterContentSlider>div>h2>a {
+		line-height: 15px;
+		font-size: 19px;
+		vertical-align: top
+	}
+	.SliderMaster .owl-item>li {
+		height: 380px;
+		margin: 10px 10px 110px
+	}
+	.BreadCrumbSlider {
+		width: calc(100% - 195px)
+	}
+	.MasterContentSlider .review {
+		border-bottom: 0;
+		padding-top: 11px
+	}
+	.BreadCrumbSlider>ul>li {
+		width: auto;
+		max-height: 24px;
+		margin-bottom: 2px;
+		margin-left: 5px
+	}
+	.BreadCrumbSlider>ul>li.TTlanguage {
+		display: none
+	}
+	.BreadCrumbSlider>ul>li>a {
+		width: 100%;
+		max-height: 21px;
+		overflow: hidden;
+		line-height: 19px;
+		padding: 1px 5px;
+		text-align: right
+	}
+	.PContentSli {
+		width: calc(100% - 180px);
+		margin-top: -10px;
+		padding-left: 10px;
+		height: 67px;
+		display: block;
+		border-bottom: 0
+	}
+	.slide-cast {
+		width: calc(100% - 180px)
+	}
+	.slide-trailor {
+		width: 190px
+	}
+	.MasterContentSlider {
+		width: 100%
+	}
+	.SlidesInner .slides {
+		width: 320px
+	}
+	.SlidesInner.show {
+		min-height: 550px;
+		padding: 20px 20px 10px
+	}
+	.SlidesInner .slides .owl-item li .TheImgAb {
+		position: relative;
+		top: auto;
+		right: auto;
+		width: 100%;
+		height: 100%;
+		border-radius: 25px;
+		box-shadow: 0 3px 25px #0000006b
+	}
+	.TheContnetLeftDiv>span {
+		font-size: 19px
+	}
+	.TheContnetLeftDiv>h2 {
+		font-size: 12px
+	}
+	.ItemNormal {
+		padding-top: 0;
+		border-bottom: 1px solid #ffffff12;
+		width: calc(50% - 5px);
+		margin-left: 5px
+	}
+	.ItemNormal:nth-child(2n+0) {
+		margin-left: 0
+	}
+	.SlidesInner .slides .owl-item li .TheContnetLeftDiv {
+		position: absolute;
+		top: 0;
+		left: 0;
+		float: none;
+		right: 0;
+		width: 100%;
+		z-index: 1000;
+		padding: 15px;
+		height: 100%;
+		background: #000000e6;
+		transform: rotateZ(5deg) translateX(50px) translateY(50px);
+		visibility: hidden;
+		opacity: 0;
+		transition: .35s all ease;
+		border-radius: 25px
+	}
+	.SlidesInner .slides .owl-item li.active .TheContnetLeftDiv {
+		visibility: visible;
+		opacity: 1;
+		transform: rotateZ(0) translateX(0) translateY(0)
+	}
+	.StarsIMDB {
+		z-index: 1000;
+		bottom: -50px;
+		width: 270px;
+		right: 50%;
+		transform: translateX(50%)!important;
+		margin-right: 0
+	}
+	.SlidesInner .slides .owl-item li {
+		height: 440px;
+		margin: 0
+	}
+	.SlidesInner .slides .owl-item li.active .OpenInfo {
+		background: #ad0919;
+		width: 32px;
+		transform: translate(-24px, -23px)
+	}
+	.SlidesInner .slides .owl-item li.active .OpenInfo>i {
+		margin-left: 0
+	}
+	.SlidesInner .slides .owl-item li:before {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none
+	}
+	.OpenInfo {
+		position: absolute;
+		display: block;
+		top: 10px;
+		left: 10px;
+		font-size: 19px;
+		width: 90px;
+		height: 32px;
+		line-height: 34px;
+		border-radius: 25px;
+		background: #019bf5;
+		color: #fff;
+		text-align: center;
+		z-index: 1000;
+		box-shadow: 0 5px 25px #000;
+		font-weight: 500;
+		font-size: 16px;
+		transition: .35s all ease
+	}
+	.OpenInfo>i {
+		margin-left: 5px
+	}
+}
+
+@media (max-width:700px) {
+	.SliderMaster .owl-carousel {
+		max-width: 100%
+	}
+    .SLeft {
+		width: 100%;
+	}
+	.BreadCrumbSlider>ul>li.TTlanguage {
+		display: inline-block
+	}
+	.SliderMaster {
+		height: 450px
+	}
+	.hero-area-slide>.ImagePosted {
+		width: 190px;
+		height: 260px;
+		position: absolute;
+		z-index: 100;
+		top: 97px;
+		left: 10px
+	}
+	.TitleBarD,.ContentTex > .TitleBarD{
+		height:auto;
+		text-align: center;
+	}
+	.OpenTNoew{
+		position:relative;
+		display: inline-block;
+		bottom: auto;
+	}
+	.TitleBarD > ul {
+		float: none;
+		text-align: center;
+		display: inline-block;
+	}
+	.IMDBRt {
+		width: 190px;
+		bottom: -7px;
+		z-index: 101;
+		left: 10px
+	}
+	.MasterContentSlider>div>h2>a>span {
+		position: relative;
+		white-space: unset;
+		line-height: 15px;
+		transition: .1s linear
+	}
+	.MasterContentSlider>div>h2 {
+		height: 60px;
+		line-height: 30px;
+		padding-top: 4px;
+		border-bottom: 1px solid #00000026
+	}
+	.MasterContentSlider>div>h2>a {
+		line-height: 15px;
+		font-size: 19px;
+		vertical-align: top
+	}
+	.SliderMaster .owl-item>li {
+		height: 380px;
+		margin: 10px 10px 110px
+	}
+	.BreadCrumbSlider {
+		width: calc(100% - 195px)
+	}
+	.MasterContentSlider .review {
+		border-bottom: 0;
+		padding-top: 11px
+	}
+	.BreadCrumbSlider>ul>li {
+		width: auto;
+		max-height: 24px;
+		margin-bottom: 2px;
+		margin-left: 5px
+	}
+	.BreadCrumbSlider>ul>li>a {
+		width: 100%;
+		max-height: 21px;
+		overflow: hidden;
+		line-height: 19px;
+		padding: 1px 5px;
+		text-align: right
+	}
+	.PContentSli {
+		width: calc(100% - 180px);
+		margin-top: -10px;
+		padding-left: 10px;
+		height: 137px;
+		display: block;
+		border-bottom: 0
+	}
+	.slide-cast {
+		display: none
+	}
+	.slide-trailor {
+		width: 190px;
+		bottom: 15px;
+		right: 0
+	}
+	.MasterContentSlider {
+		width: 100%
+	}
+	.MaiButtom>ul {
+		margin-bottom: 20px
+	}
+}
+
+@media(max-width:700px) {
+	#head {}
+	.shares {
+		text-align: center;
+		position: relative;
+		left: auto;
+		top: 10px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.RightPoster, .RightPoster.active,.RightPoster.active.ThTop {
+		margin: 0 auto;
+		width: 100%;
+		top: 0;
+	}
+	.OpenSearching,
+	.shares a {
+		float: none
+	}
+	.OrderNow {
+		width: 130px;
+		float: none;
+		display: inline-block
+	}
+	#head.Fixed .shares {
+		display: none
+	}
+	.MangContent {
+		width: 100%;
+		overflow: hidden;
+	}
+	.MaiButtom,
+	.MaiButtom>ul {
+		text-align: center;
+		width: 100%
+	}
+	.MaiButtom>ul li {
+		margin-bottom: 6px
+	}
+	.SearchingAuto {
+		width: 100%;
+	}
+	.RightPoster {
+		margin-top: 0;
+		float: none;
+		margin: 0 auto
+	}
+	.TheTitle {
+		transform: translateY(0);
+		width: 100%;
+		margin: 0;
+		text-align: center
+	}
+	.TheTitle>.TitleBar {
+		width: 100%
+	}
+	.CoverBSingle {
+	}
+	.IMDB {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 5px;
+		display: inline-block;
+		float: none
+	}
+	.Mashers>ul {
+		text-align: center
+	}
+	.leftSingle {
+		float: none;
+		display: block;
+		margin: 0 auto
+	}
+	.MasterBtnUl {
+		position: relative;
+		width: 100%;
+		top: 0;
+		bottom: 0
+	}
+	.LiveTop {
+	}
+	.MediaQueryLeft {
+		width: 100%;
+		float: none
+	}
+	.MediaQueryLeft>ul>li {
+		width: calc(50% - 5px);
+		text-align: right
+	}
+	ul.MasterToggleItem {
+	}
+	ul.MasterToggleItem>li>em {
+		float: none;
+		margin: 0 auto
+	}
+	.MasterToggleOpen {
+	}
+	.BTNMaster {
+		min-width: calc(50% - 10px);
+		margin-left: 5px
+	}
+	section.ToggleMange {
+		margin-bottom: 0
+	}
+	div#DownloadTable .ListDownloads,div#DownloadTable .ListDownloads:nth-child(4n + 0) {
+		width: calc(50% - 7px);
+		margin-left: 7px;
+	}
+}
+
+@media(max-width:480px) {
+	.OneSection {
+		float: none
+	}
+
+	.SectionTitle h2>.TitleSection{
+		font-size: 18px;
+	}
+	.PlayOpenPost{
+		transform: scale(0.69);
+		bottom: 235px;
+		left: calc(50% - 60px);
+		right: auto;
+		top: auto;
+	}
+	.PlayNow {
+		position: relative;
+		top: 10px;
+	}
+	.PlayNow i {
+		right: -2px;
+	}
+	.PlayOpenPost span.runtime {
+		bottom: -36px;
+		font-size: 19px;
+		display: none;
+	}
+	.PlayNow span {
+		bottom: -32px;
+		font-size: 17px;
+	}
+	.PlayOpenPost:before {height: 115px;top: 2px;border-radius: 60px 60px 0px 0px;border: 1px solid #00000000;transform: rotate(0deg);}
+
+.PlayOpenPost.show:before {}
+	.SmallSlider{
+		width:100%;
+		height: 220px;
+	}
+	.SliderTopAjax{
+		width: 140px;
+	}
+	a.FunClick.SliderOwl-next, a.FunClick.SliderOwl-prev{
+		transform: translate(0px, 15px);
+		opacity: 1;
+		visibility: visible;
+	}
+	a.FunClick.SliderOwl-next {
+		left: -73px;
+	}
+	.SmallSlider:before, .SmallSlider:after{display: none;}
+	.SliderTopAjax .owl-item {
+		height: 200px;
+	}
+	.DivContentNew{
+		width:100%;
+		top: 0;
+		padding: 70px 15px 0 80px;
+		background: #0000008f;
+		height: 100%;
+	}
+	.DivContentNew .IMDBBB {
+		top: 80px;
+		left: -40px;
+	}
+	.NewTem {
+		font-size: 13px;
+	}
+	.DivContentNew h2 {
+	}
+	.TopTerms > span {
+		font-size: 12px;
+	}
+	.RowerContent {
+		font-size: 0;
+	}
+	.BgTopSlider{
+	    width: 100%;
+	}
+	.BgTopSlider:nth-child(1):after {
+		display: none;
+	}
+	.BgTopSlider:nth-child(2) {
+		display: none;
+	}
+	.BTNMaster {
+		width: 100%
+	}
+	#head.Fixed .logo {
+    transform: scale(.9) translateY(-3px) translateX(-20px);
+}
+	.hamburger.OpenMenu {
+		position: absolute;
+		top: 13px;
+	}
+	.MasterHeader {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+	}
+	#head.Fixed .logo {
+	}
+	.logo a span {}
+	.logo a .EnLogo span:nth-child(1) {}
+	#head div.logo {
+		transform: scale(.9) translateY(0px) translateX(-50px);
+		height: 76px;
+	}
+	.EnLogo:before {
+	}
+	.EnLogo {}
+	#head.Fixed .logo a .EnLogo {}
+	#head.Fixed .logo a .ArLogo {
+		right: 56px
+	}
+	.logo a .ArLogo {
+		right: 107px
+	}
+	div#DownloadTable .ListDownloads {
+		width: 100%
+	}
+	div#EmbedCode {
+		width: 100%
+	}
+	ul.WatchServers {
+		width: 100%;
+		height: auto;
+		text-align: center
+	}
+	ul.WatchServers>li {
+		display: inline-block;
+		width: auto;
+		min-width: unset;
+	}
+	#head {
+		text-align: center;
+	}
+	.NewsSection>.NewsTitle {
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 0
+	}
+	.NewsSection {
+		display: inline-block;
+		width: 100%;
+		padding: 15px 15px 15px 0
+	}
+	.NewsSection>.NewsGrid {
+		width: calc(100% + 10px);
+		float: none;
+		right: -10px
+	}
+	.ActorsShape .ActorsShapeTitle {
+		display: none
+	}
+	.ActorsShape>.MainActorsSlides {
+		width: 100%
+	}
+	.slide-trailor {
+		width: 130px;
+		bottom: 15px;
+		right: 0
+	}
+	.SearchingAuto {
+	}
+	#head.Fixed .shares,
+	#head.Fixed .social-btns {
+		display: none
+	}
+	.SearchingFilter.show.OtherPages {
+		top: 135px;
+		height: 61px
+	}
+	.shares {
+		position: absolute;
+		top: 10px;
+		left: 0;
+	}
+	.social-btns {
+		display: inline-block;
+		float: none;
+		left: auto;
+		top: auto
+	}
+	.OrderNow {
+		width: 130px;
+		float: none;
+		display: inline-block
+	}
+	.OpenSearching,
+	.shares a {
+		float: none
+	}
+	.slide-trailor>a>i {
+		display: none
+	}
+	.BreadCrumbSlider>ul>li {
+		width: 100%
+	}
+	.BreadCrumbSlider>ul>li>a {
+		width: 100%;
+		max-height: 21px;
+		overflow: hidden;
+		line-height: 19px;
+		padding: 1px 5px;
+		text-align: right
+	}
+	.PContentSli {
+		width: calc(100% - 180px);
+		margin-top: -10px;
+		padding-left: 10px;
+		max-height: 120px;
+		display: none
+	}
+	.customSearch>div {
+		width: 100%
+	}
+	.customSearch>div.filter {
+		width: 100%
+	}
+	.OwlNews {
+		width: 100%
+	}
+	.MainRelated .NewsBlock {
+		width: 100%
+	}
+	.OpenGenere.noGenre {
+	left: -10px;
+	}
+	.OpenGenere.noGenre::before {
+		width: 100%;
+		height: 100%;
+		right: 0;
+		top: 0;
+		border-radius: 0;
+		transform: rotate(0) scale(1);
+		border: 0
+	}
+	.OpenGenere.noGenre span {
+		font-size: 0
+	}
+	.OpenGenere.noGenre i {
+	}
+	.RightPoster, .RightPoster.active,.RightPoster.active.ThTop {
+		margin: 0 auto;
+		width: 100%;
+		top: 0;
+		position: relative;
+	}
+	.TheTitle {
+		transform: translateY(0);
+		width: 100%;
+		margin: 0;
+		text-align: center
+	}
+	.TheTitle>.TitleBar {
+		width: 100%
+	}
+	.CoverBSingle {
+	}
+	.IMDB {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 5px;
+		display: inline-block;
+		float: none
+	}
+	.Mashers>ul {
+		text-align: center
+	}
+	.leftSingle {
+		float: none;
+		display: block;
+		margin: 0 auto
+	}
+	.MasterBtnUl {
+		position: relative;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%
+	}
+	.LiveTop {
+	}
+	.MediaQueryLeft {
+		width: 100%;
+		float: none
+	}
+	.MediaQueryLeft>ul>li {
+		width: 100%;
+		text-align: right
+	}
+	ul.MasterToggleItem {
+	}
+	ul.MasterToggleItem>li>em {
+		float: none;
+		margin: 0 auto
+	}
+	.MasterToggleOpen {
+	}
+	.MovieItem {
+		width: calc(50% - 3px);
+		float: none;
+		margin: 0 0 5px 5px!important
+	}
+	.MainRelated .MovieItem:nth-child(2n+0) {
+		margin-left: 0!important
+	}
+	.Rippon {
+		visibility: hidden;
+		opacity: 0
+	}
+	.PostMetaTar {
+		transform: scale(.8);
+		top: -5px;
+		right: -4px
+	}
+	.MovieItem>a {
+		height: 250px
+	}
+	.TitleCrumb {
+		height: auto;
+		line-height: 28px
+	}
+	.CatsFilm>a {
+		width: 100%
+	}
+}
+
+@media (max-width:340px) {
+	.SlidesInner .slides {
+		width: 100%
+	}
+	.SectionTitle h2>.TitleSection {
+		width: calc(100% - 70px)
+	}
+	.slide-trailor {
+		width: 90px;
+		bottom: 15px;
+		right: 0;
+		display: inline-block;
+		height: auto;
+		text-align: right
+	}
+	.slide-trailor>a>span {
+		width: 100%;
+		line-height: 20px;
+		height: 45px
+	}
+	.MovieItem {
+		width: 100%;
+		margin: 0!important
+	}
+}

@@ -1,0 +1,1085 @@
+@media screen (min-width: 1200px) {
+    .MoviesBlocksList .snip1543 {height: 290px;}
+}
+@media only screen and (max-width: 1200px) {
+    a.SliderOwl-prev{
+        right: 170px;
+    }
+    a.SliderOwl-next{
+        left: 170px;
+    }
+    div#SearchListResult {
+        width: 100%;
+        position: absolute;
+        z-index: 9999999;
+    }
+    .SearchForm button {
+        top: 12px;
+    }
+    .SearchForm{
+        position: absolute;
+        top: 80px;
+        right: 385px;
+        padding-top: 0;
+        width: calc(100% - 405px);
+    }
+    .MenuHeader{
+    width: calc(100% - 405px);
+    }
+    .triangle1 {
+        width: 360px;
+        height: 470px;
+        top: -50px;
+    }
+    .triangle2 {
+        width: 360px;
+        height: 470px;
+        top: 26px;
+    }
+    header {
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .MenuHeader>ul>li {
+        margin-left: 7px;
+    }
+    .MenuHeader>ul>li > a {
+        padding: 8px 11px;
+        font-size: 14px;
+    }
+    .Logo .Paragraph{
+        font-size: 14px;
+    }
+    .Logo{
+        font-size: 42px;
+    }
+    .MenuHeader{
+        padding-left: 0;
+        width: calc(100% - 360px);
+        right: 340px;
+    }
+    .triangle1 {
+        right: -560px;
+    }
+    .triangle2 {
+        left: -560px;
+    }
+    a.SliderOwl-next {
+        left: 20px;
+    }
+    a.SliderOwl-prev {
+        right: 20px;
+    }
+    .FilteringMovies > ul > li > input{
+        width: 150px;
+    }
+    .FilteringMovies > ul > li:not([data-filter="selector"]) svg {
+        display:none;
+    }
+    .FilteringMovies > ul > li:not([data-filter="selector"]) {
+        font-size: 15px;
+        padding: 11px 20px;
+        margin-right: 10px;
+    }
+    .MainSideInner{
+        padding: 20px;
+    }
+    .RelatedSection .MoviesBlocksList .snip1543:nth-child(6n+0){
+        margin-left:1% !important;
+    }
+    .MoviesBlocksList .snip1543:nth-child(3n+0) {
+        margin-left: 0;
+    }
+    .MoviesBlocksList .snip1543 {
+    height: 330px;
+    min-width: 293px;
+    margin-left: 5px;
+}
+div.EpisodesList {
+    width: auto;
+    padding: 0;
+    border: 0;
+    float: none;
+}
+.BarsMenu {
+    display:none;
+}
+.MenuClosingShape {
+    display: none;
+}
+.MenuOpeningShape{
+    display:none;
+}
+.CenterLOG{
+    right: 10px;
+    width: 320px;
+}
+.RightSingleCapsule{
+    margin-right: 10px;
+    width: 320px;
+}
+.LeftSingleCapsule {
+    width: calc(100% - 330px);
+    min-height: 490px;
+}
+.TitleSingleCapsule {
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 0 0 12px;
+}
+.TitleSingleCapsule > .fa-play {
+    display: none;
+}
+.TheContentSingle {
+    width: 100%;
+}
+.RightSectionSeries > .TabsSingle {
+    width: 100%;
+}
+.TabsSingle{
+    width: calc(100% - 100px);
+}
+.PostTags:hover {
+    height: 150px;
+}
+.SideAngle:after{
+    display: none;
+}
+ul.InfoList {display: none;}
+.Progress{
+    width: 100%;
+}
+.SideAngle{
+    position: relative;
+    clear: both;
+    width: 100%;
+    display: none;
+}
+.TitleSingleCapsule > h2 {
+    line-height: 30px;
+}
+.MainSectionFirst {
+    padding-bottom: 90px;
+}
+.TitleSingleCapsule > .stars {
+    left: auto;
+    top: 0px;
+    font-size: 16px;
+    right: 0;
+    width: 102px;
+    height: 22px;
+}
+.TabsSingle > .TabsInside {
+    overflow: auto;
+    height: 110px;
+}
+.TabsSingle > .TabsInside > div > .ActorItem{
+    margin-bottom: 7px;
+}
+div.EpisodesList table tbody > tr > td:nth-child(3) , div.EpisodesList table thead > tr > td:nth-child(3){
+    display:none;
+}
+div.EpisodesList table tbody > tr > td:nth-child(4) , div.EpisodesList table thead > tr > td:nth-child(4){
+    display:none;
+}
+div.EpisodesList table tbody > tr > td:nth-child(5) , div.EpisodesList table thead > tr > td:nth-child(5){
+    display:none;
+}
+.FilteringMovies > ul > li:not([data-filter="selector"]) > i {
+    display:none;
+}
+ul.SeasonsList > li {
+    width: 160px;
+    display: inline-block;
+    margin: 0px 4px 10px;
+}
+ul.SeasonsList{
+    margin: 0 0 5px;
+    float: none;
+    width: auto;
+    text-align: center;
+}
+.RelatedTitleInner {
+    font-size: 20px;
+}
+.TitleSingleCapsule > li:nth-child(2) {
+    margin-right: 112px;
+}
+.WatchNow{
+    margin-right: 10px;
+    max-height: 460px;
+    width: 320px;
+}
+.WatchEmbeds {
+    width: calc(100% - 370px);
+    height: 470px;
+}
+.WatchSection.active {
+    height: 500px;
+}
+.SearchForm {display: none;}
+.RightSectionSeries > ul{
+    float: none;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.TabsSingle > .TabsInside > div.active {
+    display: block;
+}
+.TabsSingle > .TabsInside > div{
+    display: none;
+}
+.SideSectionSeries {
+    height:300px;
+}
+}
+* , *:after, *:before {
+}
+@media only screen and (max-width: 1024px){
+    .container, .MasterArchiveSection{
+        width:100%;
+    }
+     .NefexLink > a > img{
+            margin-top: 19px;
+        }
+        .NefexLink{
+        margin: -18px auto 5px;
+        display: block;
+        text-align: center;
+        background: #fff;
+        height: 45px;
+        }
+        .NefexLink > a > span{
+            color: #000;
+            top: -4px;
+            font-size: 15px;
+        }
+    .sliderCont{
+        width:100%;
+    }
+    .MainSingle article{
+    margin-top: 20px;
+    }
+    .bodyContainer,.Sections{
+        width:100%
+    }
+    .shares.SocialIcons {
+        position: relative;
+        right: 0;
+        transform: translate(0);
+        bottom: 10px;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .shares {
+        /* margin-top: 4px; */
+        /* position: absolute; */
+        /* width: 100%; */
+        /* bottom: 0; */
+        /* left: 50%; */
+        /* z-index: 9; */
+        /* height: 80px; */
+        /* display: inline-block; */
+        /* background: none; */
+        /* transform: translateX(-50%) translateY(100px); */
+        /* transition: .35s all ease; */
+    }
+    .fixedSearch {
+      position: absolute;
+      left: 10px;
+      width: 400px;
+      top: 64px;
+      width: calc(100% - 20px);
+      transition: .45s ease;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0px 3px 9px #000000ad;
+      /* overflow: hidden; */
+      float: left!important;
+      transform: translateY(20px);
+      visibility: hidden;
+      opacity: 0;
+      padding: 0!important;
+      border-top: 0;
+      margin: 0 !important;
+    }
+    .fixedSearch.active {
+      width:400px;
+      transform:translateX(50px);
+    }
+    .SliderBlocksSection.genreSlider{
+        width: calc(100% - 15px);
+    }
+    .MobileSearchFilterOpen {
+        position:relative;
+        float: left!important;
+        left: 7px;
+    }
+    div.custom_search{
+        position:absolute;
+        width: 100%;
+        top: 70px;
+        display: inline-block;
+        background: #2b2b2b;
+        right: 0;
+        padding: 10px;
+        height: auto;
+        box-shadow: 0 5px 15px #000;
+        border-bottom: 3px solid #202121;
+        transform: translateY(10%);
+        transition: .35s all ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    div.custom_search.show{
+        transform: translate(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    .custom_search section > div.filter{
+        min-width: 60px;
+    }
+    .filmsAndSeries .films .allBlocks .MovieItem:nth-child(1){
+        width: 390px;
+    }
+    .filmsAndSeries .films .allBlocks .MovieItem{
+        width: 191px;
+    } 
+    div.custom_search section{
+        margin: 13px auto 0;
+        position: relative;
+        display: inline-block;
+        float: none;
+        text-align: center;
+    }
+    div.custom_search div.category{
+        width:120px
+    }
+    .poster, .masterContent, .single, section.single > .contaner,section.ToggleMange > div{
+        width:100%!important;
+        padding: 5px;
+        height: auto;
+        display: inline-block;
+    }
+    .info{
+        top:10px;
+        height:auto;
+    }
+    .info h1{
+        font-size:19px;
+        height: auto;
+        line-height: inherit;
+    }
+    .PosterIMDB{
+        top: -90px;
+    }
+    .NumberEsp{
+        top: 100px;
+    }
+    .right{
+        margin-top:20px;
+        display: inline-block;
+    }
+    .poster{
+        height: 390px;
+    }
+    .SVGMaster{
+        top: 3px;
+    }
+    .Sections > .Section{
+        height: 335px;
+    }
+    footer{
+        width:100%;
+    }
+    .HomeSlider span.next, .HomeSlider span.prev{
+        visibility:visible;
+        opacity:1;
+        transform:translate(0)!important;
+        z-index:1;
+        left: 0;
+    }
+    .HomeSlider span.prev{
+    }
+    ul.SlidesList .owl-item > li .TitleItem,ul.SlidesList .owl-item > li:after{
+        opacity:1
+    }
+    .SectionTitle .OpenGenere.noGenre{
+        left:0
+    }
+    .SliderBlocksSection:hover .owl-next, 
+    .SliderBlocksSection:hover .owl-prev{
+        transform: translateY(-50%) translateX(0px);
+    }
+    .MainRelated .MovieItem{
+        width:calc(20% - 17px);
+    }
+    
+}
+@media only screen and (max-width: 1023px){
+    .filmsAndSeries .films .allBlocks .MovieItem{
+        width: calc(25% - 10px)!important;
+        height:260px!important
+    }
+}
+
+@media only screen and (max-width: 970px){
+    .MainSingle .left{
+        /* width:400px; */
+        /* float:none; */
+    }
+    .MainSingle article{
+        margin-top: -5px;
+    }
+    .MediaQueryLeft{
+        width: 200px;
+    }
+    .MediaQueryRight{
+        width: calc(100% - 200px);
+    }
+    section.NormalTeamWork{
+        width:100%;
+        margin-top:0;
+    }
+    .breadcrumbs{
+        width:100%;
+        height:auto;
+        float: none;
+    }
+    .allBlocks .MovieItem {
+        margin-right: 5px;
+        margin-left: 5px;
+        width: calc(25% - 10px);
+    }
+    .filmsAndSeries .films .allBlocks .MovieItem{
+        width:calc(25% - 10px)!important;
+        height:260px!important;
+    }
+    .content .left{
+        width: 260px;
+        margin-top: -425px;
+    }
+    .ContentSingle {
+        width: calc(100% - 270px);
+    }
+    .info{
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        display: inline-block;
+        height: auto;
+    }
+    .info h1{
+        font-size: 18px;
+        height: auto;
+        line-height: inherit;
+    }
+    .PosterIMDB{
+        z-index: 9999999999;
+        top: 30px;
+    }
+    .NumberEsp{
+        top: 110px;
+    }
+    .right{
+        margin-top: 10px;
+        width: 100%;
+        float: none;
+    }
+    .poster{
+        height: 410px;
+    }
+    .shares{
+        /* bottom: 0; */
+        /* transform: translate(0); */
+        /* left: 0; */
+    }
+    div.content{
+        margin-top: 0;
+        margin: 0;
+    }
+    .SVGMaster{
+        top: 3px;
+    }
+    ul.WatchServers > li{
+        margin-bottom:5px;
+        font-size: 12px;
+    }
+    ul.MasterLoaderFilter > div{
+        width:calc(33.3% - 12px);
+        margin:5px;
+    }
+    ul.MasterLoaderFilter > div{
+        width:calc(33.3% - 12px);
+        margin:5px;
+    }
+    footer{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    footer .container > div{
+        float:none;
+        width:100%;
+        margin-top: 10px;
+    }
+    .Sections > .Section{
+        height: 340px;
+    }
+    .TeamWork1200 .container {
+        width: 100%;
+    }
+    ul.masterUlIn .MovieItem{
+        width: calc(25% - 17px)!important;
+        margin: 7px!important;
+    }
+    ul.masterUlIn .MovieItem:nth-child(6n + 0){
+        margin:7px!important
+    }
+    ul.masterUlIn{
+        text-align:center
+    }
+    .ToggeSerEsp{
+        width: 140px;
+        height: 622px;
+    }
+    .MainContentNAjax{
+        width: calc(100%  - 140px);
+    }
+    .container.DownloadContents {
+        width: calc(100% + 140px);
+        right: -140px;
+    }
+    ul.WatchServers{
+        height: 90px;
+    }
+    .MainRelated .MovieItem{
+        width:calc(25% - 17px);
+    }
+}
+@media only screen and (max-width: 700px){
+    .ToggeSerEsp{
+        width:100%
+    }
+    ul.WatchServers{
+        height:auto;
+    }
+    .MainContentNAjax{
+        width:100%;
+    }
+    .container.DownloadContents {
+        width:100%;
+        right: 0;
+        }
+    .MobileSearchFilterOpen {
+        padding: 1px 9px;
+        position:relative;
+        float: left!important;
+        top: 9px;
+        left: 7px;
+    }
+    .MasterSingleMeta{
+        width:100%
+    }
+    .MediaQueryRight, .MediaQueryLeft{
+        width:100%;
+        padding: 0px 15px;
+        margin:0;
+    }
+    .FooterMenu ul{
+        text-align:center
+    }
+     .FooterMenu ul > li{
+         margin-bottom:10px;
+         
+     }
+     .FooterMenu ul > li > a{
+        border-color: #ffffff2b!important;
+     }
+    div.custom_search{
+        position:absolute;
+        width: 100%;
+        top: 70px;
+        display: inline-block;
+        background: #2b2b2b;
+        right: 0;
+        padding: 10px;
+        height: auto;
+        box-shadow: 0 5px 15px #000;
+        border-bottom: 3px solid #202121;
+        transform: translateY(10%);
+        transition: .35s all ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    div.custom_search div{
+        width:calc(50% - 4px) !important;
+        margin-bottom: 3px;
+    }
+    div.custom_search.show{
+        transform: translate(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    .custom_search section > div.filter{
+        width:calc(100% - 4px)!important;
+    }
+    .allBlocks .MovieItem {
+        width: calc(33.3% - 10px);
+    }
+    .filmsAndSeries .films .allBlocks .MovieItem{
+        width: calc(33.3% - 10px)!important;
+        height: 261px!important;
+    }
+    .ContentSingle, .info,.right{
+        width:100%!important;
+        top: 0px;
+        height: auto;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .right{
+        margin-top: 10px;
+    }
+    .PosterIMDB{
+        display: inline-block;
+        top: 500px;
+        left: 0px;
+        float: left;
+        margin-right: 10px;
+        z-index: 99;
+    }
+    .NumberEsp{
+        display: inline-block;
+        top: 215px;
+        left: 0;
+        float: left;
+        z-index: 99;
+    }
+    .right > ul > li{
+        /* width:100% */
+    }
+    .info h1{
+        font-size:19px
+    }
+    .content .left{
+        margin-top: 40px;
+        width: 300px;
+        height: 360px;
+        float: none;
+        margin: 40px auto 0;
+    }
+    div.content{
+        height:auto;
+        max-height: unset;
+    }
+    .shares ul {
+        text-align:center;
+    }
+    .shares ul li{
+        float:none;
+    }
+    .SVGMaster{
+        top:3px
+    }
+    .shares{
+        /* left: 0; */
+        /* bottom: 0; */
+        /* top: auto; */
+        /* right: 0; */
+        /* transform: translate(0); */
+    }
+    .single .content article{
+        width: 100%;
+        margin-left: 0;
+        float: none;
+        margin-top: 60px;
+    }
+    .rightSlideBar{
+        width:100%;
+        margin-right: 0;
+        float: none;
+    }
+    .MasterRightSec{
+        width: calc(100% - 90px);
+        height: 240px;
+        margin-top: -35px!important;
+        margin-right: auto;
+        float: none;
+        margin: 0 auto;
+    }
+    .MasterLeftSec{
+        width: 100%;
+        padding: 20px 10px;
+        height: 280px;
+    }
+    ul.MasterToggleItem > li{
+        height:auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .NumbersSec{
+        top: -76px;
+        box-shadow: 0 0 0 0;
+    }
+    .MasterUlNavs > li{
+        width:calc(50% - 12px);
+    }
+    ul.MasterLoaderFilter > div{
+        width:calc(50% - 12px);
+        margin:5px;
+    }
+    section.NormalTeamWork{
+        width:100%;
+        margin:0;
+    }
+    .MainSingle .left{
+        /* width: 400px; */
+        float:none;
+        margin: 0 auto 10px;
+    }
+    .MainSingle article > div{
+        width:100%;
+        text-align: center;
+        padding: 0 0 0 0!important;
+    }
+    ul.masterUlIn .MovieItem{
+        width: calc(33.3% - 17px)!important;
+        margin: 7px!important;
+    }
+    ul.masterUlIn .MovieItem:nth-child(6n + 0){
+        margin:7px!important
+    }
+    ul.masterUlIn{
+        text-align:center
+    }
+    .ToggeSerEsp{
+        width:100%;
+        height: 327px;
+        border-radius: 25px 25px 0 0;
+        border-bottom: 0;
+    }
+    .MainContentNAjax{
+        width:100%;
+        border-radius: 0 0 25px 25px;
+    }
+    div#EmbedCode{
+        border-radius: 0 0 25px 25px;
+    }
+    ul.InnerESP > li span{
+        float: none;
+        margin-bottom: -10px;
+        top: 5px;
+    }
+    ul.WatchServers{
+        width:100%;
+        border-radius: 0 0 25px 25px;
+        height: auto;
+    }
+    .ServersTitle.ThisOne{
+        display:none
+    }
+    .ToggeSerEsp ul{
+        height: calc(100% - 73px);
+    }
+    ul.InnerESP > li{
+        width:calc(20% - 10px)
+    }
+    .MainRelated .MovieItem{
+        width:calc(33.3% - 17px);
+    }
+}
+@media only screen and (max-width: 480px){
+    .MenuToggle{
+        transform:scale(0.8);
+        margin-right: -17px;
+        top: 0;
+    }
+    ul.InnerESP > li{
+        width:calc(20% - 17px)
+    }
+    .HomeSlider{
+        height:570px
+    }
+    ul.masterUlIn .MovieItem{
+        width: calc(50% - 17px)!important;
+        margin: 7px!important;
+        height: 220px;
+    }
+    ul.masterUlIn .MovieItem:nth-child(6n + 0){
+        margin:7px!important
+    }
+    ul.masterUlIn{
+        text-align:center
+    }
+    ul.MasterLoaderFilter > div{
+        width:100%;
+        margin:0;
+    }
+    .fixed-header > div >div.logo{
+        font-size: 35px;
+        margin-right: -8px;
+    }
+    div.custom_search{
+        position:absolute;
+        width: 100%;
+        top: 70px;
+        display: inline-block;
+        background: #2b2b2b;
+        right: 0;
+        padding: 10px;
+        height: auto;
+        box-shadow: 0 5px 15px #000;
+        border-bottom: 3px solid #202121;
+        transform: translateY(10%);
+        transition: .35s all ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    div.custom_search div{
+        width:100% !important;
+        margin-bottom: 3px;
+    }
+    div.custom_search.show{
+        transform: translate(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    .ListMovies > a{
+        width:100%;
+    }
+    .MasterService{
+        padding:0 10px;
+        height: auto;
+        margin: 10px 0;
+    }
+    section.customButtons{
+        position:relative;
+        display: inline-block;
+        top: 0;
+    }
+    .allBlocks .MovieItem{
+        width: calc(50% - 17px);
+        height: 220px;
+    }
+    .loadFilter .allBlocks > h2 div img{
+        width:50px;
+        height:50px;
+    }
+    .fixedSearch{
+        width:100%;
+        left: 0;
+        top: 0;
+        position: relative!important;
+        margin-top: 0!important;
+        margin-left: 0;
+    }
+    section.title{
+        height:auto;
+        display: inline-block;
+        padding: 10px 0;
+        text-align: center;
+    }
+    section.title h2{
+        position:relative;
+        display: inline-block;
+        right: 0;
+        bottom: auto;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+    section.title p{
+        bottom: auto;
+        position:relative;
+        display: inline-block;
+        right: 0;
+    }
+    section.title a{
+        position:relative;
+        bottom: auto;
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .filmsAndSeries .films .allBlocks .MovieItem{
+        height:260px!important
+    }
+    .OpenGenere{
+        position:relative;
+        top: 12px;
+        left: 0px!important;
+        float: none;
+        display: block;
+        float: left;
+        font-size: 14px;
+    }
+    .SectionTitle h2 span:nth-of-type(2){
+        display: none;
+    }
+    .ContentSingle, .info,.right{
+        width:100%!important;
+        top: 0px;
+        height: auto;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        display: inline-block;
+    }
+    .right{
+        margin-top: 10px;
+    }
+    .PosterIMDB{
+        position: relative;
+        display: inline-block;
+        top: auto;
+        left: auto;
+        float: left;
+        margin-right: 10px;
+        display: none;
+    }
+    .NumberEsp{
+        position: relative;
+        display: inline-block;
+        top: auto;
+        left: auto;
+        float: left;
+        display: none;
+    }
+    .right > ul > li{
+        /* width: 100%!important; */
+    }
+    .info h1{
+        font-size:19px
+    }
+    .content .left{
+        margin-top: 40px;
+        width: 100%;
+        height: 360px;
+        float: none;
+    }
+    div.content{
+        height:auto;
+        max-height: unset;
+        margin: 0;
+    }
+    .shares ul {
+        text-align:center;
+    }
+    .shares ul li{
+        float:none;
+    }
+    .SVGMaster{
+        top:3px
+    }
+    .shares{
+        /* bottom: 0; */
+        /* top: auto; */
+        /* right: 0; */
+        /* transform: translate(0); */
+    }
+    .single .content article{
+        width: 100%;
+        margin-left: 0;
+        float: none;
+        margin-top: 60px;
+    }
+    .rightSlideBar{
+        width:100%;
+        margin-right: 0;
+    }
+    .MasterRightSec{
+        width: calc(100% - 20px);
+        height: 240px;
+        margin-top: -35px!important;
+        margin-right: auto;
+        float: none;
+        margin: 0 auto;
+    }
+    .MasterLeftSec{
+        width: 100%;
+        padding: 20px 10px;
+        height: 280px;
+    }
+    ul.MasterToggleItem > li{
+        height:auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .NumbersSec{
+        top: -103px;
+        box-shadow: 0 0 0 0;
+    }
+    .bodyContainer .loadFilter .allBlocks>h2 div span:nth-child(2){
+        top: -10px;
+    }
+    .bodyContainer .loadFilter .allBlocks>h2 div span:last-child{
+        bottom: 5px;
+        right: 74px;
+    }
+    .MainSingle .left{
+        width: 260px;
+        float:none;
+        height: 410px;
+        margin: 0 auto;
+    }
+    .MainSingle .left .image{
+        height: 360px;
+    }
+    .MainSingle article{
+        width:100%;
+    }
+    ul.SlidesList .owl-item > li{
+        height: 500px;
+        border-radius: 0;
+    }
+    section.dynamicWidth > a{
+        /* width: 20px; */
+        /* height: 20px; */
+    }
+    .MainRelated .MovieItem{
+        width: calc(50% - 17px);
+        height: 220px;
+    }
+    .Tae_cont.ReportInner.ReportInner label span input, .Tae_cont.ReportInner.ReportInner label span textarea {
+        width:100%;
+        float: left;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .ContentReport{
+        width:100%;
+        margin-top: 50px;
+    }
+    span.closseTrillerRep{
+        top: 80px;
+        z-index:999999999999999999999;
+        right: 10px;
+    }
+    .downloading a{
+        width: calc(50% - 12px)!important;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .MainContentNAjax:before{
+        display:none
+    }
+    ul.WatchServers > li {
+        width: calc(50% - 10px);
+    }
+
+}
+@media (max-width:400px){
+    section.dynamicWidth{
+        padding: 5px 5px 0 2px;
+        border-radius: 0px 0px 5px 5px;
+        position: relative;
+        overflow: hidden;
+        top: -10px;
+    }
+}
+

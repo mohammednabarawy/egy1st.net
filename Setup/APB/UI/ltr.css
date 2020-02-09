@@ -1,0 +1,26 @@
+ul.APBLayouts {
+    float: left;
+    margin-left: 0;
+    margin-right: 17px;
+}
+
+.LayoutsBuilderFooter {
+    text-align: right;
+}
+
+.apb-field > label {
+    float: left;
+    text-align: left;
+}
+
+a.APBUploadButton {left: auto;right: 0;border-radius: 0 6px 6px 0;}
+
+.apb-type-file_list > div.apb-field-inner {
+    padding-left: 110px;
+    padding-right: 0;
+}
+
+.apb-type-file_list > div.apb-field-inner > .APBUploadButton {
+    left: 0;
+    right: auto;
+}

@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css?family=Changa:400,700,800');
+.postbox[id*="APBMetaBox"] .handlediv {height: 47px;width: 47px;}
+.postbox[id*="APBMetaBox"] .handlediv .toggle-indicator {color: #2e4f7b;}
+.postbox[id*="APBMetaBox"] > h2 {
+    background: linear-gradient(to left, rgba(26, 119, 244, 0.34), rgba(26, 119, 244, 0));
+    padding: 14px !important;
+    font-family: Changa;
+    color: rgb(46, 79, 123);
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+.APBLayoutsBuilder {float: right;width: calc(100% - 150px);min-height: 340px;position: relative;}
+ul.APBLayouts {
+    background: #dfdfdf;
+    border-radius: 8px;
+    width: 133px;
+    height: 340px;
+    overflow: auto;
+    float: right;
+    margin-bottom: 0;
+    margin-left: 17px;
+    margin-top: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 30px;
+}
+ul.APBLayouts > li.layout-current {background: #8060e6 !important;}
+ul.APBLayouts > li {
+    width: 100%;
+    height: 71px;
+    float: right;
+    transition: .2s all ease;
+    background: white;
+    box-shadow: 0px 1px 2px #0000004d;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 11px;
+}
+.postbox .inside:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.GridIcon {
+    padding: 10px;
+}
+
+.GridIcon > em {
+    width: 24px;
+    height: 18px;
+    background: #0003;
+    display: block;
+    margin: 0px 3px 12px;
+    float: right;
+}
+.Columns3Icon {
+    padding: 10px;
+}
+
+.Columns3Icon > em {
+    width: 27%;
+    height: 22px;
+    background: #0003;
+    display: block;
+    margin: 0px 3% 6px;
+    float: right;
+}
+
+.Columns4Icon {
+    padding: 7px;
+}
+
+.Columns4Icon > em {
+    width: 19%;
+    height: 24px;
+    background: #0003;
+    display: block;
+    margin: 0px 3% 6px;
+    float: right;
+}
+ul.APBLayouts > li .Cover {
+    margin: 6px;
+    height: 59px;
+}
+ul.APBLayouts > li .Cover > em {
+    display: block;
+    height: 100%;
+    background: #0003;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 60px;
+    font-style: normal;
+    color: #00000033;
+    font-family: Changa;
+    font-weight: bold;
+    font-size: 25px;
+}
+.Columns2Icon {
+    padding: 10px;
+}
+
+.Columns2Icon > em {
+    width: 35px;
+    height: 50px;
+    background: #0003;
+    display: block;
+    margin: 0px 5px 0px;
+    float: right;
+}
+
+ul.APBLayouts > li:Hover {
+    background: #a083ff59;
+}
+
+ul.APBLayouts > li:active {
+    box-shadow: inset 0 6px 12px #00000030;
+}
+ul.APBLayouts::-webkit-scrollbar {
+    width: 3px;
+}
+ul.APBLayouts::-webkit-scrollbar-track {
+}
+ul.APBLayouts::-webkit-scrollbar-thumb {
+ background-color: #5286e64f;
+}
+ul.APBLayouts::scrollbar {
+    width: 3px;
+}
+ul.APBLayouts::scrollbar-track {
+}
+ul.APBLayouts::scrollbar-thumb {
+ background-color: #5286e64f;
+}
+
+ul.APBLayouts::-moz-scrollbar {
+    width: 3px;
+}
+ul.APBLayouts::-moz-scrollbar-track {
+}
+ul.APBLayouts::-moz-scrollbar-thumb {
+ background-color: #5286e64f;
+}
+
+ul.APBLayouts::-ms-scrollbar {
+    width: 3px;
+}
+ul.APBLayouts::-ms-scrollbar-track {
+}
+ul.APBLayouts::-ms-scrollbar-thumb {
+ background-color: #5286e64f;
+}
+
+.SadFace {
+    width: 140px;
+    height: 90px;
+    margin: 100px auto 20px;
+    overflow: hidden;
+}
+
+.SadFace > em {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #9ea1ce;
+    float: right;
+    margin: 0px 20px 18px 20px;
+}
+
+.SadFace > span {
+    display: block;
+    height: 60px;
+    border-top: 15px solid #9ea1ce;
+    clear: both;
+    border-radius: 50% 50%;
+    width: 100px;
+    margin: 0 auto;
+}
+
+p.DidntSelectYet {
+    text-align: center;
+    font-size: 22px;
+    font-family: Changa;
+    font-weight: bold;
+}
+
+ul.APBLayouts > li span.LayoutName {
+    display: block;
+    text-align: center;
+    font-family: Changa;
+    font-weight: bold;
+    transition: .3s all ease;
+    line-height: 70px;
+}
+
+ul.APBLayouts > li.layout-current span.LayoutName {
+    color: white;
+}
+
+.APBLoader {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.FieldTitle {
+    display: table;
+    margin: 0 auto 16px;
+    background: #7e52e6;
+    font-size: 21px;
+    padding: 6px 20px 5px 20px;
+    font-family: Changa;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    border-bottom: 3px solid #6c44cc;
+}
+
+.apb-field {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.apb-field > label {
+    display: block;
+    float: right;
+    width: 20%;
+    height: 40px;
+    font-family: Changa;
+    text-align: right;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #545658;
+}
+
+.apb-field > .apb-field-inner {float: right;width: calc(100% - 20%);box-sizing: border-box;position: relative;}
+
+.apb-field:after {content: '';display: block;clear: both;}
+
+.apb-field > .apb-field-inner > input , .apb-field > .apb-field-inner > select {
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    font-family: Changa;
+    padding: 0 10px;
+}
+
+.postbox[id*="APBMetaBox"] > .inside {
+    padding: 20px;
+    margin: 0 !IMPORTANT;
+}
+
+.apb-field.apb-type-title {
+    margin-bottom: 0;
+}
+
+.apb-field > .apb-field-inner > textarea {
+    width: 100%;
+    margin: 0;
+    height: 100px;
+    padding: 13px;
+    font-family: Changa;
+}
+
+.CodeMirror {
+    height: 200px !important;
+    background: #faf7ff !IMPORTANT;
+}
+
+.CodeMirror-cursor {
+}
+
+.datepickers-container {
+    direction: ltr;
+}
+
+.datepicker {
+    display: none;
+}
+
+.datepicker.active {
+    display: block;
+}
+
+label.APBCheckLabel {
+    display: inline-block;
+    background: #f1e9fd;
+    margin-left: 9px;
+    height: 30px;
+    margin-bottom: 7px;
+    color: #8d849a;
+    padding: 4px 11px;
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Changa;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+label.APBCheckLabel em {
+    font-style: normal;
+}
+
+label.APBCheckLabel > input {
+    float: right;
+    margin-top: 3px;
+    margin-left: 8px;
+    outline: 0 !IMPORTANT;
+    border-color: #23282d;
+    box-shadow: 0 0 0 !IMPORTANT;
+}
+
+label.APBCheckLabel input:checked + span + em {
+    color: white;
+}
+
+label.APBCheckLabel input:checked + span {
+    background: #7e52e6;
+}
+
+label.APBCheckLabel span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+label.APBCheckLabel > input[type="checkbox"]:before {
+    background-color: #7e52e6 !important;
+    color: white !important;
+    margin: -3px -1px !IMPORTANT;
+}
+label.APBCheckLabel > input[type="radio"]:before {
+    background-color: #7e52e6 !important;
+    color: white !important;
+}
+
+label.APBCheckLabel > input:checked {border-color: transparent;box-shadow: 0 0 0;}
+
+.popover {
+    z-index: 99999;
+    direction: ltr;
+}
+
+a.APBUploadButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    height: 40px;
+    background: #5286e6cc;
+    border-radius: 6px 0 0 6px;
+    color: white !important;
+    text-align: center;
+    font-family: Changa;
+    outline: 0;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+a.APBUploadButton:hover {
+    background: #588ff5;
+    color: white;
+}
+
+a.APBUploadButton:active {
+    box-shadow: inset 0 3px 15px #00000036;
+}
+
+.APBPreviewFile {
+    max-width: 180px;
+    float: right;
+    margin-left: 12px;
+    background: #eee;
+}
+
+a.APBRemoveButton {
+    display: inline-block;
+    background: #dc2f2f;
+    height: 30px;
+    text-decoration: none;
+    outline: 0;
+    color: white !IMPORTANT;
+    font-family: Changa;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 0px 15px;
+    border-radius: 4px;
+}
+
+.apb-type-file > div.apb-field-inner > input , .apb-type-file_list > div.apb-field-inner > input {
+    margin-bottom: 8px;
+}
+
+.previewList {
+    text-align: center;
+}
+
+.previewList > span {
+    width: 90px;
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.previewList > span > img {
+    max-width: 100%;
+}
+
+.apb-type-file_list > div.apb-field-inner > .APBUploadButton {
+    border-radius: 6px;
+    left: auto;
+    right: 0;
+    background: #59da87;
+    font-size: 17px;
+}
+
+.apb-type-file_list > div.apb-field-inner {
+    padding-right: 110px;
+    text-align: center;
+}
+
+.previewList:after {content: '';display: block;clear: both;}
+@keyframes CloseIcon {
+    0% {
+        transform: scale(.88);
+    }
+}
+.previewList > span > em {
+    position: absolute;
+    width: 10px;
+    cursor: pointer;
+    height: 10px;
+    border-radius: 50%;
+    background: #f72323;
+    top: -5px;
+    right: -3px;
+    animation: CloseIcon .5s ease infinite;
+    display: block;
+}
+
+.apb-field.apb-type-group {
+    background: #f3f3f3;
+    padding: 0 25px 21px;
+    box-sizing: border-box;
+    border-top: 2px solid #ddd;
+}
+
+#poststuff .apb-field.apb-type-group > div > h2 {margin: 0 -25px 10px;height: 50px;padding: 15px 22px;background: #d2c5f1;box-sizing: border-box;line-height: 100%;color: #4e4465;font-size: 20px;font-family: Changa;text-transform: capitalize;position: relative;}
+
+#poststuff .apb-field.apb-type-group > div > h2 em {
+    font-style: normal;
+    color: #140a2b;
+    transform: scale(1.9);
+    display: inline-block;
+    font-weight: bold;
+    padding: 0px 2%;
+}
+
+.LayoutsBuilderFooter {
+    clear: both;
+    height: 45px;
+    margin: 0px -20px 0px;
+    padding: 0px 20px 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.LayoutsBuilderFooter > a {
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+    background: #23282d;
+    padding: 12px 25px;
+    font-family: Changa;
+    color: white !important;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.APBMainLayout {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 8px solid #f1f1f1;
+    padding-top: 25px;
+    position: relative;
+}
+
+.inside .APBMainLayout:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.apb-field.apb-type-group label.APBCheckLabel {
+    background: #dedbdb;
+    color: #000000a8;
+}
+
+#poststuff .apb-field.apb-type-group > div > h2 > a {
+    display: inline-block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    background: #f52727;
+    border-radius: 50%;
+    box-shadow: 0 0 0 !important;
+    outline: 0 !IMPORTANT;
+    position: relative;
+    top: 0;
+}
+
+.richText .richText-help {
+    display: none !important;
+}
+
+a.RemoveIT {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 21px;
+    color: #e23131;
+}
+
+.Columns4Icon.Larger > em {
+    border-radius: 6px;
+}
+
+.SliderIcon {
+    margin: 5px;
+    height: 63px;
+    position: relative;
+}
+
+.SliderIcon > span {
+    display: block;
+    height: 40px;
+    margin: 0px 16px;
+    background: #0002;
+}
+
+.SliderIcon > .fa-angle-left {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+}
+.SliderIcon > .DotsIcon {text-align: center;}
+.SliderIcon > .DotsIcon > em {
+    width: 8px;
+    height: 8px;
+    background: #0002;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0px 2px;
+}
+.SliderIcon > .DotsIcon > em.active {
+    background: #0004;
+}
+.SliderIcon > .fa-angle-right {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 20px;
+}
+
+.ContentareaIcon {
+    padding: 9px 13px;
+}
+
+.ContentareaIcon > span {
+    display: block;
+    height: 8px;
+    background: #0002;
+    margin: 0 auto 7px;
+    width: 45px;
+}
+.ContentareaIcon > em {
+    display: block;
+    height: 38px;
+    background: #0002;
+}
+
+.AdsIcon {
+    margin: 9px;
+    height: 53px;
+}
+
+.AdsIcon > span {
+    display: block;
+    height: 100%;
+    text-align: center;
+    background: #0002;
+    font-size: 40px;
+    font-family: Changa;
+    font-weight: bold;
+    line-height: 55px;
+    color: #0003;
+}
+
+.MoveElement {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+
+.MoveElement > a {
+    display: block;
+    float: left;
+    line-height: 0px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+.AlertIcon > span {
+    display: block;
+    height: 40px;
+    text-align: center;
+    font-family: Changa;
+    direction: ltr;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.133);
+}
+.AlertIcon {
+    margin: 15px;
+}
+.SingleBlockIcon {
+    padding: 15px 12px;
+}
+.SingleBlockIcon > em {
+    display: block;
+    float: right;
+    width: 24%;
+    height: 40px;
+    margin-left: 10%;
+    border-width: 2px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    background: rgba(0, 0, 0, 0.133);
+}
+.SingleBlockIcon > span {
+    display: block;
+    height: 9px;
+    float: right;
+    width: 66%;
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 16px, rgba(0, 0, 0, 0.133) 0px 31px;
+    background: rgba(0, 0, 0, 0.133);
+}
+
+.popover .arrow {
+    margin-right: 0 !important;
+    display: none;
+}
+
+.ButtonIcon {
+    padding: 12px;
+}
+
+.ButtonIcon > em {
+    display: block;
+    font-style: normal;
+    background: #0002;
+    height: 47px;
+    text-align: center;
+    font-family: Arial Black;
+    line-height: 47px;
+    font-size: 17px;
+    color: #0003;
+}

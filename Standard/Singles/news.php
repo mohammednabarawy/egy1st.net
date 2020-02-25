@@ -74,7 +74,7 @@ $postUser = get_userdata($post->post_author);
 echo "<span>" . $postUser->display_name . "</span>";
 echo "</li></div></div><div class=\"SingleNewsContent\">";
 echo "<strong class=\"titleFirst\">" . get_bloginfo("name") . " :</strong>";
-echo get_the_content($post->ID);
+the_content();
 echo "</div></div>";
 wp_reset_query();
 echo "<div class=\"BreadcrumbMasteriv IsNewsSingle\" style=\"opacity:1\"><div class=\"breadcrumbs\"><div class=\"breadcrumb clearfix\"><div id=\"mpbreadcrumbs\">";

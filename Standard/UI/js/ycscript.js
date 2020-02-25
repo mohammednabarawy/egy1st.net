@@ -351,11 +351,11 @@ $(function(){
       })
     })
     var loadsonglast = false;
-    var offset = 0;
+    var ofsec = 0;
     var ajaxPostloaded = $('#Sections');
     var bottomlastsong = $('.FooterLoadedOne');
     $(window).scroll(function() {
-      if($(this).scrollTop() > bottomlastsong.offset().top - 1200  ){
+      if($(this).scrollTop() > bottomlastsong.offset().top - 1300  ){
         if( loadsonglast == false ) {
           if( $('#Sections').attr('data-loading') == 'false' ) {
             loadsonglast = true;
@@ -363,7 +363,7 @@ $(function(){
               url: ajaxurl,
               type: 'POST',
               data: {
-                  'offset':offset,
+                  'offset':ofsec,
                   'action':'sectionLoadMore'
               },
               success: function(msg){
@@ -373,10 +373,11 @@ $(function(){
                 $('img[data-src]').each(function(){
                   $(this).attr('src',$(this).data('src'));
                   $(this).removeAttr('data-src');
-                });             
+                });
+                ofsec = ofsec + 3;             
               }
             });
-            offset = offset + 3;
+            
           }
         }
       }

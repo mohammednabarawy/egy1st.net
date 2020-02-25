@@ -98,7 +98,7 @@ if ($Schema == "movie") {
         echo "</div>";
     }
     echo "Writers:";
-    foreach (is_array(get_the_terms($post->ID, "escritor", "")) ? get_the_terms($post->ID, "escritor", "") : array() as $writers) {
+    foreach (is_array(get_the_terms($post->ID, "country", "")) ? get_the_terms($post->ID, "country", "") : array() as $writers) {
         echo "<div itemprop=\"author\" itemscope itemtype=\"http://schema.org/Person\">";
         echo "<span itemprop=\"name\">" . $writers->name . "</span>";
         echo "</div>";
@@ -305,7 +305,18 @@ if (!empty($awards)) {
     }
     echo "</li>";
 }
+if (get_post_meta($post->ID, "Awards", 1) != "") {
+    echo "<li><div class=\"ImgIcon\"><i class=\"fal fa-trophy-alt\"></i></div><span>الجوائز : </span>";
+    echo "<em>" . get_post_meta($post->ID, "Awards", 1) . "</em>";
+    echo "</li>";
+}
 $runtime = get_post_meta($post->ID, "runtime", 1);
+if (!empty($runtime)) {
+    echo "<li><div class=\"ImgIcon\"><i class=\"far fa-clock\"></i></div><span>مدة العرض : </span>";
+    echo "<em>" . $runtime . "</em>";
+    echo "</li>";
+}
+$runtime = get_post_meta($post->ID, "Runtime", 1);
 if (!empty($runtime)) {
     echo "<li><div class=\"ImgIcon\"><i class=\"far fa-clock\"></i></div><span>مدة العرض : </span>";
     echo "<em>" . $runtime . "</em>";
@@ -334,12 +345,12 @@ if (get_the_terms($post->ID, "release-year", 1)) {
     }
     echo "</div>";
 }
-if (get_the_terms($post->ID, "country", 1)) {
+if (get_the_terms($post->ID, "nation", 1)) {
     echo "<div class=\"ItemNormal\">";
-    foreach (array_slice(is_array(get_the_terms($post->ID, "country", 1)) ? get_the_terms($post->ID, "country", 1) : array(), 0, 1) as $country) {
-        echo "<a href=\"" . get_term_link($country) . "\">";
+    foreach (array_slice(is_array(get_the_terms($post->ID, "nation", 1)) ? get_the_terms($post->ID, "nation", 1) : array(), 0, 1) as $nation) {
+        echo "<a href=\"" . get_term_link($nation) . "\">";
         echo "<i class=\"fal fa-globe-africa\"></i>";
-        echo "<h4>" . $country->name . "</h4>";
+        echo "<h4>" . $nation->name . "</h4>";
         echo "<span>الدولة</span></a>";
     }
     echo "</div>";
@@ -362,9 +373,9 @@ if (get_post_meta($post->ID, "trailer", 1)) {
 }
 echo "</div><div class=\"CatsFilm\">";
 $actor = is_array(get_the_terms($post->ID, "actor", "")) ? get_the_terms($post->ID, "actor", "") : array();
-$escritor = is_array(get_the_terms($post->ID, "escritor", "")) ? get_the_terms($post->ID, "escritor", "") : array();
+$country = is_array(get_the_terms($post->ID, "country", "")) ? get_the_terms($post->ID, "country", "") : array();
 $director = is_array(get_the_terms($post->ID, "director", "")) ? get_the_terms($post->ID, "director", "") : array();
-$arr = array_merge($actor, $escritor, $director);
+$arr = array_merge($actor, $country, $director);
 if (!empty($arr)) {
     echo "<span class=\"TitleBarD\"><i class=\"fal fa-users-crown\"></i><em>فريق العمل</em></span>";
     if (get_the_terms($post->ID, "actor", "")) {
@@ -379,13 +390,13 @@ if (!empty($arr)) {
         }
         echo "</li>";
     }
-    if (get_the_terms($post->ID, "escritor", "")) {
+    if (get_the_terms($post->ID, "country", "")) {
         echo "<li><strong>الكاتب </strong>";
         $i = 0;
-        foreach (get_the_terms($post->ID, "escritor", "") as $escritor) {
+        foreach (get_the_terms($post->ID, "country", "") as $country) {
             $i++;
-            echo "<a href=\"" . get_term_link($escritor) . "\" class=\"TeamWor\">";
-            echo "<span>" . $escritor->name . "</span>";
+            echo "<a href=\"" . get_term_link($country) . "\" class=\"TeamWor\">";
+            echo "<span>" . $country->name . "</span>";
             echo "</a>";
         }
     }
@@ -533,19 +544,21 @@ echo "<div id=\"DownloadTable\">";
 if (get_post_meta($post->ID, "downloads", true)) {
     echo "<span class=\"TitleBarD\"><i class=\"fal fa-download\"></i><em>روابط التحميل </em></span><div class=\"DownloadSer\">";
     foreach (is_array(get_post_meta($post->ID, "downloads", true)) ? get_post_meta($post->ID, "downloads", true) : array() as $download) {
-        echo "<div class=\"ListDownloads\">";
-        echo "<a href=\"" . $download["link"] . "\" target=\"_blank\">";
-        echo "<i class=\"fa fa-download\"></i>";
         if (!empty($download["name"])) {
-            echo "<span class=\"Dtit\">" . $download["name"] . "</span>";
+            echo "<div class=\"ListDownloads\">";
+            echo "<a href=\"" . $download["url"] . "\" target=\"_blank\">";
+            echo "<i class=\"fa fa-download\"></i>";
+            if (!empty($download["name"])) {
+                echo "<span class=\"Dtit\">" . $download["name"] . "</span>";
+            }
+            echo "<div class=\"Dqual\"><i class=\"fas fa-tv\"></i>";
+            echo "<span>" . ($download["quality"] ? $download["quality"] : "") . "" . ($download["resolution"] ? $download["resolution"] : "") . "</span>";
+            echo "</div>";
+            if (!empty($download["size"])) {
+                echo "<em class=\"Size\"><i class=\"fal fa-file-archive\"></i>" . $download["size"] . "</em>";
+            }
+            echo "</a></div>";
         }
-        echo "<div class=\"Dqual\"><i class=\"fas fa-tv\"></i>";
-        echo "<span>" . ($download["quality"] ? $download["quality"] : "") . "" . ($download["resolution"] ? $download["resolution"] : "") . "</span>";
-        echo "</div>";
-        if (!empty($download["size"])) {
-            echo "<em class=\"Size\"><i class=\"fal fa-file-archive\"></i>" . $download["size"] . "</em>";
-        }
-        echo "</a></div>";
     }
     echo "</div>";
 }

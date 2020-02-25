@@ -38,10 +38,12 @@ echo "\",\n        \"name\": \"";
 the_title();
 echo "\"\n      }\n    }]\n  }\n</script>\n<div class=\"ContainerNews\"><div class=\"container\">";
 wp_reset_query();
-echo "<div class=\"main-content main-content-news\"><div class=\"newsContent\"><div class=\"NewTitles\">";
+echo "<div class=\"main-content main-content-news\"><div class=\"newsContent orderPage\"><div class=\"NewTitles\">";
 echo "<a href=\"" . get_the_permalink($post->ID) . "\" alt=\"" . get_the_title($post->ID) . "\" title=\"" . get_the_title($post->ID) . "\">";
 echo "<h1>" . get_the_title($post->ID) . "</h1>";
-echo "</a></div></div><div class=\"story Comment IsNewsSingle\">";
+echo "</a></div>";
+the_content();
+echo "</div><div class=\"story Comment IsNewsSingle\">";
 if (get_option("CommentCode")) {
     $disqus_shortname = get_option("CommentCode");
     wp_enqueue_script("disqus_embed", "http://" . $disqus_shortname . ".disqus.com/embed.js");

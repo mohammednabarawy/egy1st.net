@@ -14,7 +14,7 @@ $home = "الرئيسية";
 $homeLink = home_url();
 global $post;
 $i = 0;
-$args = array("post_type" => "post", "fields" => "ids", "meta_key" => "pin", "posts_per_page" => wp_is_mobile() ? 5 : 10, "meta_query" => array(array("key" => "number", "compare" => "EXISTS")));
+$args = array("post_type" => "post", "fields" => "ids", "meta_key" => "pin", "posts_per_page" => wp_is_mobile() ? 5 : 10, "meta_query" => array(array("key" => "number", "value" => 0, "compare" => ">")));
 echo "<div class=\"SlidesInner\"><div class=\"InnerGets\">";
 $args["posts_per_page"] = 1;
 $wp_query = new WP_Query();
@@ -154,7 +154,7 @@ if (isset($_GET["key"])) {
         }
     }
 } else {
-    $args = array("post_type" => "post", "fields" => "ids", "posts_per_page" => $postNumber, "meta_key" => "number");
+    $args = array("post_type" => "post", "fields" => "ids", "posts_per_page" => $postNumber, "meta_query" => array(array("key" => "number", "value" => 0, "compare" => ">")));
     $wp_query = new WP_Query();
     $wp_query->query($args);
     while ($wp_query->have_posts()) {

@@ -35,13 +35,13 @@ class ThemeTree
         (new ThemeCore())->AddTaxonomy("release-year", "post", "سنة الاصدار", array("slug" => "release-year"), false);
         (new ThemeCore())->AddTaxonomy("Quality", "post", "الجودة", array("slug" => "Quality"), false);
         (new ThemeCore())->AddTaxonomy("resolution", "post", "الدقة", array("slug" => "resolution"), false);
-        (new ThemeCore())->AddTaxonomy("country", "post", "الدولة", array("slug" => "country"), false);
+        (new ThemeCore())->AddTaxonomy("nation", "post", "الدولة", array("slug" => "nation"), false);
         (new ThemeCore())->AddTaxonomy("language", "post", "اللغة", array("slug" => "language"), false);
         (new ThemeCore())->AddTaxonomy("genre", "post", "الانواع", array("slug" => "genre"), false);
         (new ThemeCore())->AddTaxonomy("age", "post", "الفئة العمرية ", array("slug" => "age"), false);
         (new ThemeCore())->AddTaxonomy("actor", "post", "الممثلين", array("slug" => "actor"), false);
         (new ThemeCore())->AddTaxonomy("director", "post", "المخرجين", array("slug" => "director"), false);
-        (new ThemeCore())->AddTaxonomy("escritor", "post", "الكاتبين", array("slug" => "escritor"), false);
+        (new ThemeCore())->AddTaxonomy("country", "post", "الكاتبين", array("slug" => "country"), false);
         (new ThemeCore())->AddTaxonomy("assemblies", "post", "سلاسل الافلام", array("slug" => "assemblies"), false);
         (new ThemeCore())->AddTaxonomy("selary", "post", "المسلسلات", array("slug" => "selary"), ture);
         (new ThemeCore())->AddTaxonomy("catnews", "news", "تصنيف الاخبار", array("slug" => "catnews"), false);

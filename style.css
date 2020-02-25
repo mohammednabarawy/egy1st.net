@@ -3298,7 +3298,7 @@ button.owl-next>span {
 }
 
 #SearchInnerList .MovieItem {
-	width: 195px
+	width: 191px
 }
 
 .sliderContainer .owl-nav {
@@ -9040,9 +9040,7 @@ ul.likes li.dislikes:hover {
 	position: relative;
 	background: linear-gradient(to left, #ffffff0a, rgba(255, 255, 255, .03));
 	margin-top: -5px;
-	box-shadow: 0 2px 15px #00000021;
 	margin-bottom: 0;
-	min-height: 400px;
 }
 
 .NewTitles h1 {
@@ -12871,4 +12869,32 @@ ul.MasterToggleItem>li:hover>span,ul.MasterToggleItem>li.active>span {
 .reportpopup.active {
     transform: scale(1);
     transition: .3s all ease;
+}
+.SingleNewsContent a:hover {
+    color: #bf0303;
+}
+.newsContent.orderPage {
+    margin-top: 90px;
+}
+.newsContent.orderPage input {
+    width:100%;
+    padding:7px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc
+}
+
+.newsContent.orderPage textarea {
+    width:100%;
+    padding:7px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc
+}
+
+.newsContent.orderPage input[type="submit"] {
+    border:0;
+    background:#ab040e;
+    color:#fff;
+    width:100px;
 }

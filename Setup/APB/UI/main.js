@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('#misc-publishing-actions').append('<input type="hidden" name="apbupdate" value="1" />');
 	$('body').on('click', 'ul.APBLayouts > li', function(e){
 		$('#'+$(this).data('fields')).val($(this).data('layoutval'));
 		var APBBuilderParent = $(this).parent().parent().find('.APBLayoutsBuilder');
@@ -62,4 +63,7 @@ function PrevItem(el) {
 	if( $Parent.next().hasClass('APBMainLayout') ) {
 		$Parent.insertAfter($Parent.next());
 	}
+}
+function RemoveGroupField(el) {
+	$(el).parent().parent().remove();
 }

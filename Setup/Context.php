@@ -328,9 +328,12 @@ class ThemeContext extends ThemeTree
     public function sectionLoadMore()
     {
         $nums = 0;
-        foreach (get_posts(array("post_type" => "sections", "fields" => "ids", "posts_per_page" => 3, "offset" => $_POST["offset"], "meta_query" => array(array("key" => "pinSec", "compare" => "NOT EXISTS")))) as $section) {
+        $argssections = array("post_type" => "sections", "fields" => "ids", "posts_per_page" => 3);
+        if (0 < $_POST["offset"]) {
+            $argssections["offset"] = $_POST["offset"];
+        }
+        foreach (get_posts($argssections) as $section) {
             $nums++;
-            global $post;
             if (get_option("Posts_perFu")) {
                 if (wp_is_mobile()) {
                     $postNumber = "10";
@@ -401,6 +404,7 @@ class ThemeContext extends ThemeTree
             echo "<div class=\"SectionContent datasection\" data-section=\"" . $section . "\">";
             echo "<div class=\"container\">";
             echo "<div class=\"OneSection active\" data-exist=\"" . $section . "\">";
+            global $post;
             $args["posts_per_page"] = 1;
             $wp_query = new WP_Query();
             $wp_query->query($args);
@@ -411,6 +415,7 @@ class ThemeContext extends ThemeTree
             echo "</div>";
             wp_reset_query();
             echo "<div class=\"MultyBlocks MultyBlocks" . $section . "\" data-section=\"" . $section . "\">";
+            global $post;
             $args["posts_per_page"] = 10;
             $wp_query = new WP_Query();
             $wp_query->query($args);
@@ -1853,42 +1858,8 @@ class ThemeContext extends ThemeTree
     public function firstServer()
     {
         $post = $_POST["id"];
-        if (get_post_meta($_POST["id"], "watch", true)) {
-            $watch = get_post_meta($_POST["id"], "watch", true);
-            $WServersArr = array();
-            foreach (is_array($watch) ? $watch : array() as $k => $server) {
-                if (get_option("LinkTws")) {
-                    $found = false;
-                    $ServersBlock = array_values(explode(",", get_option("LinkTws")));
-                    foreach ($ServersBlock as $n) {
-                        if (strpos($server["code"], $n) !== false) {
-                            $found = true;
-                        }
-                    }
-                    if ($found != true) {
-                        $ServName = $server["name"];
-                        $WServersArr[$k . "-" . $ServName] = "<noscript style=\"display:none\">" . $server["code"] . "</noscript>";
-                    }
-                } else {
-                    $ServName = $server["name"];
-                    $WServersArr[$k . "-" . $ServName] = "<noscript style=\"display:none\">" . $server["code"] . "</noscript>";
-                }
-            }
-            $i = 0;
-            foreach (is_array($WServersArr) ? $WServersArr : array() as $k => $SEmbed) {
-                list(, $ServerName) = explode("-", $k);
-                list($ServerKey) = explode("-", $k);
-                $selected = "";
-                if ($i == 0) {
-                    $EmbedCode = $SEmbed;
-                }
-                $i++;
-            }
-            if (!empty($EmbedCode)) {
-                list(, $FinalEmbed) = explode("<noscript style=\"display:none\">", $EmbedCode);
-                list($FinalEmbed) = explode("</noscript>", $FinalEmbed);
-                echo $FinalEmbed;
-            }
+        if (get_post_meta($_POST["id"], "embed_pelicula", true)) {
+            echo get_post_meta($_POST["id"], "embed_pelicula", true);
         }
         echo "\t\t\t<script type=\"text/javascript\">\n\t\t\t\t\$('.OpenServers').attr('data-loaded','true');\n\t\t\t</script>\n\t\t";
         wp_die();

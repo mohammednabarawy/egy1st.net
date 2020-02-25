@@ -231,8 +231,11 @@ class APBFieldsTypes extends APBFields
         if (isset($field["number"])) {
             $args["number"] = $field["number"];
         }
+        if (!isset($field["placeholder"])) {
+            $field["placeholder"] = "إختر";
+        }
         echo "<select name=\"" . $name . "\" id=\"" . $id . "\">";
-        echo "<option value=\"\">اختر </option>";
+        echo "<option" . ($value == "" ? " selected" : "") . " value=\"\">" . $field["placeholder"] . "</option>";
         foreach ($this->TaxonomyList($args) as $v => $option) {
             echo "<option" . ($value == $v ? " selected" : "") . " value=\"" . $v . "\">" . $option . "</option>";
         }
@@ -313,14 +316,14 @@ class APBFieldsTypes extends APBFields
         $id = str_replace(array("[", "]"), "_", $id);
         $id = str_replace("__", "_", $id);
         $button = is_rtl() ? "رفع ملف" : "Upload file";
-        echo "<input type=\"hidden\" value=\"" . (isset($value["id"]) ? $value["id"] : "") . "\" name=\"" . $name . "[id]\" id=\"" . $id . "_id\" />";
-        echo "<input type=\"text\" value=\"" . (isset($value["url"]) ? $value["url"] : "") . "\" name=\"" . $name . "[url]\" id=\"" . $id . "\" />";
+        echo "<input type=\"hidden\" id=\"" . $id . "_id\" />";
+        echo "<input type=\"text\" value=\"" . $value . "\" name=\"" . $name . "\" id=\"" . $id . "\" />";
         echo "<a href=\"javascript:void(0);\" data-multiple=\"false\" data-type=\"" . (isset($field["mime"]) ? $field["mime"] : "image") . "\" data-field=\"#" . $id . "\" data-name=\"" . $name . "\" data-rlname=\"" . $field["name"] . "\" class=\"APBUploadButton\">" . (isset($field["button"]) ? $field["button"] : $button) . "</a>";
         $style = "";
         if (empty($value)) {
             $style = "display:none;";
         }
-        echo "<img class=\"APBPreviewFile\" id=\"" . $id . "_preview\" style=\"" . $style . "\" src=\"" . (isset($value["url"]) ? $value["url"] : "") . "\" />";
+        echo "<img class=\"APBPreviewFile\" id=\"" . $id . "_preview\" style=\"" . $style . "\" src=\"" . $value . "\" />";
         echo "<a style=\"" . $style . "\" href=\"javascript:void(0);\" class=\"APBRemoveButton\" data-multiple=\"false\" id=\"" . $id . "_remove\">حذف</a>";
     }
     public function FileList($value, $field, $name, $id)
@@ -343,7 +346,7 @@ class APBFieldsTypes extends APBFields
     public function Editor($value, $field, $name, $id)
     {
         wp_editor($value, $id, array("textarea_name" => $name));
-        echo "<script>\n\t\t\$(document).ready(function(){\n\t\t\t// remove existing editor instance\n\t\t\ttinymce.execCommand('mceRemoveEditor', true, '" . $id . "');\n\n\t\t\t// init editor for newly appended div\n\t\t\tvar init = tinymce.extend( {}, tinyMCEPreInit.mceInit[ '" . $id . "' ] );\n\t\t\ttry { tinymce.init( init ); } catch(e){}\n\t\t});\n\t\t</script>";
+        echo "<script>\r\n\t\t\$(document).ready(function(){\r\n\t\t\t// remove existing editor instance\r\n\t\t\ttinymce.execCommand('mceRemoveEditor', true, '" . $id . "');\r\n\r\n\t\t\t// init editor for newly appended div\r\n\t\t\tvar init = tinymce.extend( {}, tinyMCEPreInit.mceInit[ '" . $id . "' ] );\r\n\t\t\ttry { tinymce.init( init ); } catch(e){}\r\n\t\t});\r\n\t\t</script>";
     }
     public function Group($value, $field, $parentname, $id, $MetaboxID = "", $original = 0)
     {
@@ -351,22 +354,24 @@ class APBFieldsTypes extends APBFields
         if (!empty($value) && $original == 0) {
             foreach ($value as $k => $v) {
                 echo "<div>";
-                echo "<h2>" . $field["name"] . " [<em>" . ($i + 1) . "</em>]<a href=\"javascript:void(0);\" onClick=\"\$(this).parent().parent().remove();\" class=\"RemoveIT\"></a></h2>";
-                foreach ($field["fields"] as $f) {
-                    echo "<div class=\"apb-field apb-hook apb-field-" . $f["id"] . " apb-type-" . $f["type"] . "\">";
-                    if ($f["type"] == "title") {
-                        $name = $parentname . "[" . $i . "][" . $f["id"] . "]";
-                        $id = $parentname . "_" . $i . "_" . $f["id"];
-                        $this->Field($f, $name, $id, 0, (int) $i + 1, "", "", $parentname, $MetaboxID);
-                    } else {
-                        $name = $parentname . "[" . $i . "][" . $f["id"] . "]";
-                        $id = $parentname . "_" . $i . "_" . $f["id"];
-                        echo "<label for=\"" . $parentname . "_" . $f["id"] . "\">" . $this->ARorEN($f["name"], $f) . "</label>";
-                        $this->Field($f, $name, $id, 0, (int) $i + 1, "", "", $parentname, $MetaboxID);
+                echo "<h2>" . $field["name"] . " [<em>" . ($i + 1) . "</em>]<a href=\"javascript:void(0);\" onClick=\"RemoveGroupField(this);\" class=\"RemoveIT\"></a></h2>";
+                foreach (array_filter($field["fields"]) as $f) {
+                    if (!empty($f)) {
+                        echo "<div class=\"apb-field apb-hook apb-field-" . $f["id"] . " apb-type-" . $f["type"] . "\">";
+                        if ($f["type"] == "title") {
+                            $name = $parentname . "[" . $k . "][" . $f["id"] . "]";
+                            $id = $parentname . "_" . $k . "_" . $f["id"];
+                            $this->Field($f, $name, $id, 0, (int) $k + 1, "", "", $parentname, $MetaboxID);
+                        } else {
+                            $name = $parentname . "[" . $k . "][" . $f["id"] . "]";
+                            $id = $parentname . "_" . $k . "_" . $f["id"];
+                            echo "<label for=\"" . $parentname . "_" . $f["id"] . "\">" . $this->ARorEN($f["name"], $f) . "</label>";
+                            $this->Field($f, $name, $id, 0, (int) $k + 1, "", "", $parentname, $MetaboxID);
+                        }
+                        echo "</div>";
                     }
-                    echo "</div>";
                 }
-                $i++;
+                $i = $k + 1;
                 echo "</div>";
             }
             echo "<div class=\"LayoutsBuilderFooter\">";
@@ -374,7 +379,7 @@ class APBFieldsTypes extends APBFields
             echo "</div>";
         } else {
             echo "<div>";
-            echo "<h2>" . $field["name"] . " [<em>" . ($i + 1) . "</em>]</h2>";
+            echo "<h2>" . $field["name"] . " [<em>" . ($i + 1) . "</em>]<a href=\"javascript:void(0);\" onClick=\"RemoveGroupField(this);\" class=\"RemoveIT\"></a></h2>";
             foreach ($field["fields"] as $field) {
                 echo "<div class=\"apb-field apb-field-" . $field["id"] . " apb-type-" . $field["type"] . "\">";
                 if ($field["type"] == "title") {

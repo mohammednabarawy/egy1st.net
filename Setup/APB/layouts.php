@@ -8,7 +8,7 @@
  * @ ZendGuard Decoder PHP 5.6
  */
 
-$layouts["slider"] = array("name" => "سليدر", "nameEN" => "Slider", "name" => "جريد", "type" => "layout", "layout" => "<div class=\"SliderIcon\">\n\t\t<span></span>\n\t\t<i class=\"fa fa-angle-right\"></i>\n\t\t<i class=\"fa fa-angle-left\"></i>\n\t\t<div class=\"DotsIcon\">\n\t\t\t<em class=\"active\"></em>\n\t\t\t<em></em>\n\t\t\t<em></em>\n\t\t</div>\n\t</div>");
+$layouts["slider"] = array("name" => "سليدر", "nameEN" => "Slider", "name" => "جريد", "type" => "layout", "layout" => "<div class=\"SliderIcon\">\r\n\t\t<span></span>\r\n\t\t<i class=\"fa fa-angle-right\"></i>\r\n\t\t<i class=\"fa fa-angle-left\"></i>\r\n\t\t<div class=\"DotsIcon\">\r\n\t\t\t<em class=\"active\"></em>\r\n\t\t\t<em></em>\r\n\t\t\t<em></em>\r\n\t\t</div>\r\n\t</div>");
 $layouts["good"] = array("name" => "المميزات", "nameEN" => "Good", "type" => "name", "layout" => "<div class=\"GoodIcon\"><li><em></em><span></span></li><li><em></em><span></span></li><li><em></em><span></span></li><li><em></em><span></span></li></div>");
 $layouts["bad"] = array("name" => "العيوب", "nameEN" => "Bad", "type" => "name", "layout" => "<div class=\"BadIcon\"><li><em></em><span></span></li><li><em></em><span></span></li><li><em></em><span></span></li><li><em></em><span></span></li></div>");
 $layouts["4columns"] = array("name" => "4 صفوف", "nameEN" => "4 Columns", "type" => "layout", "layout" => "<div class=\"Columns4Icon\"><em></em><em></em><em></em><em></em><em></em><em></em><em></em><em></em></div>");

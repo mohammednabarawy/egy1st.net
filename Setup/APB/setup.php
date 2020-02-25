@@ -58,6 +58,8 @@ class APB
         echo "<script type=\"text/javascript\" src=\"" . APB_URL . "UI/js/DatePickerEN.js\"></script>";
         echo "<script type=\"text/javascript\" src=\"" . APB_URL . "UI/js/jquery.richtext.min.js\"></script>";
         (new APBFields())->PinnedJQuery();
+        echo "<script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>";
+        echo "<script src=\"" . APB_URL . "UI/addswitch.js?" . rand() . "\" type=\"text/javascript\"></script>";
         echo "<script src=\"" . APB_URL . "UI/main.js?" . rand() . "\" type=\"text/javascript\"></script>";
         if (!did_action("wp_enqueue_media")) {
             wp_enqueue_media();
@@ -74,7 +76,7 @@ class APB
         }
         echo "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"" . APB_URL . "UI/css/codemirror.css\" />";
         echo "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"" . APB_URL . "UI/css/richtext.min.css\" />";
-        echo "<link rel=\"stylesheet\" href=\"https://kit-pro.fontawesome.com/releases/v5.9.0/css/pro.min.css\">";
+        echo "<link rel=\"stylesheet\" href=\"https://kit-pro.fontawesome.com/releases/v5.12.0/css/pro.min.css\">";
         echo "<link href=\"" . APB_URL . "UI/css/datepicker.css\" rel=\"stylesheet\">";
         echo "<link href=\"" . APB_URL . "UI/css/colorpicker.css\" rel=\"stylesheet\">";
         echo "<link href=\"http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css\" rel=\"stylesheet\">";
@@ -169,9 +171,10 @@ class APB
     }
     public function SavePost($postID)
     {
-        if ($this->CanSave()) {
+        global $post;
+        if ($this->CanSave() && isset($this->Methods()["apbupdate"])) {
             foreach ($this->boxes as $k => $v) {
-                if (!isset($v["callback"]) && isset($v["ptype"]) && in_array(get_post_type($postID), $v["ptype"])) {
+                if (isset($v["ptype"]) && !isset($v["callback"]) && in_array(get_post_type($postID), $v["ptype"])) {
                     if ($v["type"] == "layouts") {
                         if (isset($this->Methods()[$k])) {
                             $this->UpdatePost($postID, $k, $this->Methods()[$k]);
